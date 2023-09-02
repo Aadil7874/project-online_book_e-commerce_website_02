@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creativebook.com - Your Online Bookstore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* CSS styles */
+        /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+
+
+        .book-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .book-info img {
+            max-width: 500px;
+            max-height: 500px;
+            margin-right: 20px;
+        }
+
+        .contact {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+
+
+
+        footer {
+            background-color: #13ea53;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        } */
+
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CreativeBooks</h1>
+    </header>
+
+    <nav>
+        <h4><u>Navigation Block</u></h4>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="hero" id="home">
+        <h2>Your Journey into the World of Books Begins Here</h2>
+    </section>
+
+    <!-- Main Content -->
+    <section id="about" class="main-content">
+        <h2>About Us</h2>
+        <p>Welcome to CreativeBooks, your go-to online bookstore and print-on-demand service. We bring you a wide
+            collection
+            of books from various genres.</p>
+    </section>
+    <div>
+        <section class="hero-1" id="1">
+            <table>
+                <tbody>
+                    <tr>
+            <img src="Image1.png" alt="Image1" width="50%" height="100%">
+            <img src="Image2.png" alt="Image1" width="50%" height="100%">
+        </tr>
+        </tbody>
+        </table>
+        </section>
+    </div>
+    <!-- User Form* -->
+    <div>
+        <h1><u>Fill This Form </u></h1>
+        <section id="UForm" class="userform">
+            <form action="#">
+                <caption> Name* &nbsp; &nbsp; &nbsp;</caption>
+
+                <input type="text" id="Name" placeholder="Full Name..."><br><br>
+                <label for="Uemail">Email id*&nbsp;&nbsp;&nbsp;</label>
+                <input type="email" id="Uemail" placeholder="email..."><br><br>
+                <label for="quantity">Quantity &nbsp;&nbsp;&nbsp;</label>
+                <select name="quantity" id="quantity">Quantity
+                    <option value="1">1</option>
+                    <option value="1">2</option>
+                    <option value="1">3</option>
+                    <option value="1">4</option>
+                    <option value="1">5</option>
+                </select><br><br>
+                <label for="DOB">Date of Birth:</label>
+        <input type="date" id="DOB" name="DOB" required><br><br>
+            </form>
+        </section>
+    </div><br><br>
+
+    <!-- Comparison Table -->
+    <table>
+        <caption><u><strong><em>Comparison Table</em></strong></u></caption>
+        <thead>
+            <th>Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </th>
+            <th>Price&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </th>
+            <th>Our Price &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>$50</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>$25</td>
+                <td>$15</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>$70</td>
+                <td>$50</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- User Review Form -->
+    <h1>Submit Your Review</h1>
+
+    <form action="#" method="get">
+        <label for="ReviewerName">Your Name:</label>
+        <input type="text" id="ReviewerName" name="name" placeholder="Full Name" required><br><br>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="select">Select</option>
+            <option value="5" selected>&#9733;&#9733;&#9733;&#9733;&#9733; (5 stars)
+            </option>
+            <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734; (4 stars)</option>
+            <option value="3">&#9733;&#9733;&#9733;&#9734;&#9734; (3 stars)</option>
+            <option value="2">&#9733;&#9733;&#9734;&#9734;&#9734; (2 stars)</option>
+            <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734; (1 star)</option>
+        </select><br><br>
+
+        <label for="howmuch">Quantity:</label>
+        <input type="text" id="howmuch" name="quantity" placeholder="quantity" required><br><br>
+
+        <label for="review"><u>Write Your Review:</u></label><br>
+        <textarea id="review" name="review" rows="10" cols="60" required></textarea><br><br>
+
+        <input type="submit" value="Submit Review">
+        <input type="reset" value="Reset">
+    </form>
+    <!-- End User Review Form -->
+    <!-- Our Services -->
+    <section id="services" class="main-content">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Explore a vast collection of books</li>
+            <li>Customize and order print-on-demand books</li>
+            <li>Enjoy hassle-free online shopping experience</li>
+        </ul>
+    </section>
+    <!-- Main Content -->
+    <section class="main-content">
+        <table>
+            <thead>
+                <th>
+
+                    <h1><em><strong></strong>Featured Books </strong></em></h1>
+                    <div class="book-info">
+                        <ul>
+                            <li>
+                                <p>Discover the captivating story of "Metaheuristics for Cluster Head Selection
+                                    Optimization By
+                                    _Vijayalakshmi K!</p>
+                            </li>
+                        </ul>
+                        <img src="Book1.jpg" alt="Book 1" width="40%" height="50%">
+
+                    </div>
+
+                    <hr color="#ccc">
+
+                    <div class="book-info">
+                        <ul>
+                            <li>
+                                <p>Immerse yourself in the magic of "Detecting Malicious Traffic with Machine Learning
+                                    By _Varun Kumar KA". <br>Order your copy today!</p>
+                            </li>
+                        </ul>
+                        <img src="book2.jpg" alt="Book 2" width="40%" height="50%">
+
+                    </div>
+                </th>
+            </thead>
+        </table>
+    </section>
+    <section id="contact" class="contact">
+        <h2><strong>Contact Us</strong></h2>
+        <p>If you have any questions, feel free to <a href="mailto:socialaadil470@gmail.com"><strong>email
+                    us</strong></a>.</p>
+        <p>Contact: contact@bookworm.com | Follow us on
+            <a href="https://www.facebook.com/CreativeBook" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+            and
+            <a href="https://www.instagram.com/CreativeBook" target="_blank"><i class="fab fa-instagram"></i>
+                Instagram</a> and
+            <a href="https://www.twitter.com/CreativeBook" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        </p>
+        <p>
+
+        </p>
+    </section>
+    <hr color="syan">
+
+    <footer>
+        <p>&copy; 2023 CreativeBooks.com. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
